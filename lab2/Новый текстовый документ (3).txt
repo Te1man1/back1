@@ -1,0 +1,28 @@
+1
+GET /back2/ HTTP/1.0
+HOST: u47651.kubsu-dev.ru
+2
+GET /back2/ HTTP/1.1
+HOST: u47651.kubsu-dev.ru
+3
+HEAD /back2/file.tar.gz HTTP/1.1
+HOST: u47651.kubsu-dev.ru
+4
+HEAD /back2/image.png HTTP/1.1
+HOST: u47651.kubsu-dev.ru
+5
+POST /back2/index.php HTTP/1.1
+HOST: u47651.kubsu-dev.ru
+Content-Type: application/x-www-form-urlencoded
+Content-Length:13
+
+say=Hey&to=you
+
+6
+GET /back2/file.tar.gz HTTP/1.1
+HOST: u47651.kubsu-dev.ru
+Range: bytes=0-99
+
+
+HEAD /back2/index.php HTTP/1.1
+HOST: u47651.kubsu-dev.ru
